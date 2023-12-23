@@ -25,3 +25,27 @@ if time >= 8 && phoneInUse {
 
 print(brightness) // Prints: 0.75
 
+// Logical OR Operator
+/*
+true || true	true
+true || false	true
+false || true	true
+false || false	false
+*/
+
+var snowing = false 
+var raining = true
+
+if snowing || raining {
+ print("Wear waterproof shoes!")
+}
+
+// Logical NOT Operator
+let a = true
+let b = false
+
+print(!a) // Prints: false 
+print(!b) // Prints: true 
+
+// NOTE: The && operator has higher precedence over the || operator.
+
