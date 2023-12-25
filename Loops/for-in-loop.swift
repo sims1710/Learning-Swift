@@ -52,3 +52,54 @@ for char in funFact {
 }
 
 // Using Underscore
+for num in 1...10 {
+  print("I will not write smelly code.")
+}
+
+// But notice, we don’t actually use num in our loop body.
+
+for _ in 1...10 {
+  print("I will not write smelly code.")
+}
+
+
+// THE CONTINUE KEYWORD : to tell our loop to skip a value.
+let challenge = "bring it"
+
+for char in challenge {
+  switch char {
+    case "a", "e", "i", "o", "u":
+      continue
+    default:
+      print(char)
+  }
+}
+
+for num in 1...9 {
+  if (num % 2 != 0) {
+    continue
+  } 
+  print(num)
+}
+
+// The break Keyword : to exit out of the loop before the loop fully completes
+let respect = 556
+
+for pageNum in 1...1000 {
+  if pageNum == respect {
+    print("Respect means: to admire someone for their abilities.")
+    break
+  }
+  print("On page \(pageNum) and still no 'respect'!")
+}
+
+var guessedNum = Int.random(in: 1...15)
+
+for counter in 1...15 {
+  // Add your code below 🤔
+  if counter == guessedNum {
+    print("It's \(guessedNum)!!")
+    break
+  }
+  print("Is it \(counter)?")
+}
